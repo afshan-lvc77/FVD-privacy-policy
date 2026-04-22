@@ -5,38 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Fast Video Downloader</title>
     <style>
+        /* Google Patti aur Tooltip hatane ka logic */
+        .goog-te-banner-frame.skiptranslate { display: none !important; }
+        body { top: 0px !important; }
+        .goog-tooltip { display: none !important; }
+        .goog-tooltip:hover { display: none !important; }
+        .goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
+
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; color: #333; background-color: #f4f7f6; }
-        .container { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); position: relative; margin-top: 20px; }
+        .container { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); position: relative; }
         
-        /* New Professional Translate Button Styling */
-        .translate-wrapper {
+        /* New Easy Translate Selector Box */
+        .translate-box {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             padding: 10px;
             background: #fff;
             border-radius: 10px;
-            display: inline-block;
-            width: 100%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #ddd;
         }
-        #google_translate_element {
-            display: inline-block;
-            padding: 8px 15px;
-            border: 2px solid #3498db;
-            border-radius: 50px;
-            background: #fff;
-        }
-        
+
         h1 { color: #2c3e50; border-left: 5px solid #3498db; padding-left: 15px; margin-bottom: 30px; }
         h2 { color: #2980b9; margin-top: 25px; font-size: 1.4rem; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         p, li { font-size: 16px; color: #444; }
         .contact-info { background: #f0f7ff; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db; margin-top: 30px; }
         footer { text-align: center; margin-top: 40px; font-size: 14px; color: #888; }
         
-        /* Hide Google Header Bar */
-        .goog-te-banner-frame.skiptranslate { display: none !important; }
-        body { top: 0px !important; }
-
         @media (max-width: 600px) {
             .container { padding: 15px; }
         }
@@ -44,8 +38,8 @@
 </head>
 <body>
 
-    <div class="translate-wrapper">
-        <label style="font-weight: bold; color: #3498db; margin-right: 10px;">Change Language:</label>
+    <div class="translate-box">
+        <label style="font-weight: bold; display: block; margin-bottom: 5px;">Translate Page:</label>
         <div id="google_translate_element"></div>
     </div>
 
@@ -56,28 +50,30 @@
         <p>Welcome to <strong class="notranslate">Fast Video Downloader</strong>. This Privacy Policy explains how we handle information in our latest version. Our primary goal is to provide a safe and simple tool for downloading media while respecting your privacy.</p>
 
         <h2>1. Information Collection and Use</h2>
-        <p>We do <strong>not</strong> collect, store, or share any personal information such as your name, email address, phone number, or location. The app functions without requiring any user registration or account creation.</p>
+        <p>We do <strong>not</strong> collect, store, or share any personal information such as your name, email address, phone number, or location. The app functions without requiring any user registration or account creation. All downloads are initiated manually by the user.</p>
 
         <h2>2. Core Features & External Links</h2>
-        <p>Our app <span class="notranslate">Fast Video Downloader</span> provides icons for easy access to <strong>Instagram, Facebook, YouTube, TikTok, Moj, and X</strong>. Please be aware:</p>
+        <p>Our app provides icons for easy access to <strong>Instagram, Facebook, YouTube, TikTok, Moj, and X (formerly Twitter)</strong>. Please be aware:</p>
         <ul>
-            <li>Clicking these icons may redirect you to external websites or official apps.</li>
-            <li>We do not collect any data or login credentials from these platforms.</li>
+            <li>Clicking these icons may redirect you to external websites, official apps, or the Play Store.</li>
+            <li>We do not collect any data or login credentials from these third-party platforms.</li>
+            <li>We recommend reviewing the privacy policies of these third-party services.</li>
         </ul>
 
         <h2>3. Permissions We Request</h2>
+        <p>To provide its core features, the app requires the following permissions:</p>
         <ul>
-            <li><strong>Storage:</strong> To save videos in your gallery.</li>
-            <li><strong>Internet:</strong> To download video data.</li>
-            <li><strong>Background Service:</strong> To continue downloading when the app is minimized.</li>
-            <li><strong>Notifications:</strong> To update you on download status.</li>
+            <li><strong>Storage (Photos/Media/Files):</strong> To save downloaded videos directly into your phone's gallery.</li>
+            <li><strong>Internet Access:</strong> To process links via our secure server and download video data.</li>
+            <li><strong>Background Service:</strong> To ensure that your video download continues even if you switch to another app or minimize the downloader.</li>
+            <li><strong>Notifications:</strong> To keep you updated on the progress and completion of your downloads.</li>
         </ul>
 
         <h2>4. Third-Party Services</h2>
-        <p>We use a secure server to process links. No user data is logged. We currently <strong>do not use AdMob</strong> or any tracking services.</p>
+        <p>Our app uses a secure GitHub-hosted server to process video links and retrieve the original file URL. No user data is logged or stored during this process. We currently <strong>do not use AdMob</strong> or any third-party tracking/analytics services.</p>
 
         <h2>5. Data Security</h2>
-        <p>Since we do not collect personal data, your identity remains 100% anonymous.</p>
+        <p>Since we do not collect personal data, your identity remains 100% anonymous. We do not have any database to store your personal information.</p>
 
         <h2>6. Contact Us</h2>
         <div class="contact-info">
