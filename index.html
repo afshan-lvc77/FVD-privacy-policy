@@ -5,88 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Fast Video Downloader</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; padding: 20px; max-width: 900px; margin: auto; color: #333; background-color: #f4f7f6; }
-        .container { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); position: relative; margin-top: 20px; }
-        
-        /* New Professional Translate Button Styling */
-        .translate-wrapper {
-            text-align: center;
-            margin-bottom: 25px;
-            padding: 10px;
-            background: #fff;
-            border-radius: 10px;
-            display: inline-block;
-            width: 100%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        #google_translate_element {
-            display: inline-block;
-            padding: 8px 15px;
-            border: 2px solid #3498db;
-            border-radius: 50px;
-            background: #fff;
-        }
-        
-        h1 { color: #2c3e50; border-left: 5px solid #3498db; padding-left: 15px; margin-bottom: 30px; }
-        h2 { color: #2980b9; margin-top: 25px; font-size: 1.4rem; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        p, li { font-size: 16px; color: #444; }
-        .contact-info { background: #f0f7ff; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db; margin-top: 30px; }
-        footer { text-align: center; margin-top: 40px; font-size: 14px; color: #888; }
-        
-        /* Hide Google Header Bar */
+        /* --- Google Bar Hiding Logic --- */
         .goog-te-banner-frame.skiptranslate { display: none !important; }
         body { top: 0px !important; }
+        .goog-tooltip { display: none !important; }
+        .goog-tooltip:hover { display: none !important; }
+        .goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
+
+        /* --- Professional UI Styling --- */
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.7; 
+            padding: 20px; 
+            max-width: 850px; 
+            margin: auto; 
+            color: #2c3e50; 
+            background-color: #f8fafc; 
+        }
+        
+        .container { 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+            border: 1px solid #e2e8f0;
+        }
+
+        .translate-card {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        h1 { 
+            color: #1a202c; 
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        h2 { 
+            color: #3182ce; 
+            font-size: 1.3rem; 
+            margin-top: 35px; 
+            border-left: 4px solid #3182ce;
+            padding-left: 12px;
+        }
+
+        /* --- Professional List (UL) Styling --- */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: #4a5568;
+        }
+
+        ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #38a169;
+            font-weight: bold;
+        }
+
+        .contact-box { 
+            background: #edf2f7; 
+            padding: 25px; 
+            border-radius: 12px; 
+            margin-top: 40px;
+        }
+
+        footer { 
+            text-align: center; 
+            margin-top: 50px; 
+            font-size: 0.85rem; 
+            color: #a0aec0;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+
+        #google_translate_element select {
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #cbd5e0;
+            background: #fff;
+            color: #4a5568;
+            outline: none;
+        }
 
         @media (max-width: 600px) {
-            .container { padding: 15px; }
+            .container { padding: 20px; }
+            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="translate-wrapper">
-        <label style="font-weight: bold; color: #3498db; margin-right: 10px;">Change Language:</label>
+    <div class="translate-card">
+        <label style="font-weight: 600; font-size: 14px; margin-bottom: 8px; display: block; color: #4a5568;">Select Language</label>
         <div id="google_translate_element"></div>
     </div>
 
     <div class="container">
-        <h1>Privacy Policy</h1>
-        <p><strong>Last updated: April 22, 2026</strong></p>
+        <h1 class="notranslate">Privacy Policy</h1>
+        <span class="last-updated">Last updated: April 22, 2026</span>
 
-        <p>Welcome to <strong class="notranslate">Fast Video Downloader</strong>. This Privacy Policy explains how we handle information in our latest version. Our primary goal is to provide a safe and simple tool for downloading media while respecting your privacy.</p>
+        <p>Welcome to <strong class="notranslate">Fast Video Downloader</strong>. This policy outlines our commitment to your privacy while using our application. Our goal is to provide a powerful tool that respects user boundaries.</p>
 
         <h2>1. Information Collection and Use</h2>
-        <p>We do <strong>not</strong> collect, store, or share any personal information such as your name, email address, phone number, or location. The app functions without requiring any user registration or account creation.</p>
+        <p>We do <strong>not</strong> collect, store, or request any personal information. You can use <span class="notranslate">Fast Video Downloader</span> without registration, accounts, or providing any sensitive data.</p>
 
-        <h2>2. Core Features & External Links</h2>
-        <p>Our app <span class="notranslate">Fast Video Downloader</span> provides icons for easy access to <strong>Instagram, Facebook, YouTube, TikTok, Moj, and X</strong>. Please be aware:</p>
+        <h2>2. Features & External Links</h2>
+        <p>Our app provides shortcuts to popular platforms. Please note:</p>
         <ul>
-            <li>Clicking these icons may redirect you to external websites or official apps.</li>
-            <li>We do not collect any data or login credentials from these platforms.</li>
+            <li>Icons for <strong>Instagram, Facebook, YouTube, TikTok, Moj, and X</strong> are provided for user convenience.</li>
+            <li>Clicking these icons will redirect you to their official services.</li>
+            <li>We do not have access to your accounts or activity on these third-party platforms.</li>
         </ul>
 
-        <h2>3. Permissions We Request</h2>
+        <h2>3. Permissions Explained</h2>
+        <p>To function correctly, we require:</p>
         <ul>
-            <li><strong>Storage:</strong> To save videos in your gallery.</li>
-            <li><strong>Internet:</strong> To download video data.</li>
-            <li><strong>Background Service:</strong> To continue downloading when the app is minimized.</li>
-            <li><strong>Notifications:</strong> To update you on download status.</li>
+            <li><strong>Storage:</strong> Specifically to save media files to your gallery.</li>
+            <li><strong>Internet:</strong> To fetch video data from your provided links.</li>
+            <li><strong>Background Service:</strong> To ensure downloads finish if you leave the app.</li>
+            <li><strong>Notifications:</strong> To keep you informed of download progress.</li>
         </ul>
 
-        <h2>4. Third-Party Services</h2>
-        <p>We use a secure server to process links. No user data is logged. We currently <strong>do not use AdMob</strong> or any tracking services.</p>
+        <h2>4. Data Security</h2>
+        <p>Your privacy is handled with total anonymity. We do not use AdMob, tracking SDKs, or any analytics that could identify you. All processing is focused purely on the video link you provide.</p>
 
-        <h2>5. Data Security</h2>
-        <p>Since we do not collect personal data, your identity remains 100% anonymous.</p>
-
-        <h2>6. Contact Us</h2>
-        <div class="contact-info">
+        <h2>5. Developer Contact</h2>
+        <div class="contact-box">
             <strong>Developer:</strong> <span class="notranslate">Shahid</span><br>
-            <strong>Email:</strong> mohdsahidkhan911@gmail.com
+            <strong>Official Email:</strong> mohdsahidkhan911@gmail.com
         </div>
 
         <footer>
-            &copy; 2026 <span class="notranslate">Fast Video Downloader</span> - All Rights Reserved.
+            &copy; 2026 <span class="notranslate">Fast Video Downloader</span> | Managed by <span class="notranslate">Shahid</span>
         </footer>
     </div>
 
